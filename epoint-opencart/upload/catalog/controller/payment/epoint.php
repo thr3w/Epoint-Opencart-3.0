@@ -1,5 +1,6 @@
 <?php
-class ControllerExtensionPaymentEpoint extends Controller {
+namespace Opencart\Catalog\Controller\Extension\Epoint\Payment;
+class Epoint extends \Opencart\System\Engine\Controller {
 
 	public function index() {
 		require_once(DIR_APPLICATION.'model/extension/payment/epoint/epoint.class.php');
@@ -49,7 +50,6 @@ class ControllerExtensionPaymentEpoint extends Controller {
 			$order_id = @$_GET['order_id'];
 			$_epoint = new EpointGateway($this->config->get('payment_epoint_app_id'), $this->config->get('payment_epoint_merchant_private_key'));
 			$_status = $_epoint->getStatus(@$_GET['order_id']); 
-			var_dump($_status);
 			if (($_status != null) && ($_status['status'] == 'success')):
 				
 				$this->load->model('checkout/order');

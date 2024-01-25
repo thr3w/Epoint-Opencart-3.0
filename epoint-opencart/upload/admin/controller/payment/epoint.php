@@ -1,10 +1,11 @@
 <?php
-class ControllerExtensionPaymentEpoint extends Controller {
+namespace Opencart\Admin\Controller\Extension\Epoint\Payment;
+class Epoint extends \Opencart\System\Engine\Controller {
 	private $error = array();
 	private $currencies = array('AZN', 'USD', 'EUR');
 
 	public function index() {
-		$this->load->language('extension/payment/epoint');
+		$this->load->language('extension/epoint-gateway/payment/epoint');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
