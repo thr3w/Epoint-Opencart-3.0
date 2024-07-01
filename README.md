@@ -1,31 +1,27 @@
 # Integration module for Opencart 3.0
-Epoint integration module version 2.05
+Epoint integration module version 2.1
 
 [![N|Solid](https://epoint.az/images/logo.svg)](https://epoint.az/)
 
 Information about [epoint.az](https://epoint.az) you can find on the website. 
 
 ## Requirements
-1. Opencart (Tested on v3.0.3.8)
+- epoint-2_1.ocmod.zip is tested on v3.0.3.8
+- epoint.ocmod.zip is tested on v4.0.1.1
 
-## Installation
+## Installation Steps
+1. Download the ZIP File
+2. In the admin panel of your Opencart website, navigate "Extensions" -> "Installer" -> Upload -> Select the downloaded file.
+3. After installation, in the admin panel, navigate "Extensions" -> "Extensions".
+4. In the filter "Choose the extension type", select "Payments"
+5. In the list of "Payment Method", find "Epoint.az" and click the "+" button on the right side
 
-1. Download ZIP File
-2. Back-up your website (Just in case of misclick)
-3. Extract (Merge) files from "admin" to "admin" of your production server
-4. Extract (Merge) files from "catalog" to "catalog" of your production server
-5. In admin panel of your Opencart website navigate "Extensions" -> "Extensions"
-6. In the filter "Choose the extension type" find "Payments"
-7. In the list of "Payment Method" find "Epoint.az" and click on "+" button on the right side
-
-## Epoint adaptation
-1. After installation press on "Edit"
-2. Insert your Merchant ID to "Merchant ID"
-3. Insert your Secret key to "Key"
-4. Status should be "Enabled"
-5. Save Changes
-6. Enjoy
-
+## After activation
+1. Insert your Public key in the "Public key" field.
+2. Insert your Secret key in the "Private key" field.
+3. Set the currency to AZN. (If not listed, it should be added in the System -> Localisation -> Currencies).
+4. Select one of the languages: az, en, or ru.
+5. Set the status to "Enabled"
 
 
 ## Contributing
