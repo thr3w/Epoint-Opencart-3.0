@@ -1,4 +1,4 @@
-# Integration module for Opencart 3.0
+# Integration module for Opencart 3.0 & 4.0 
 Epoint integration module version 2.1
 
 [![N|Solid](https://epoint.az/images/logo.svg)](https://epoint.az/)
