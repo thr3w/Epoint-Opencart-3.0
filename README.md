@@ -6,7 +6,11 @@ Epoint integration module version 2.1
 Information about [epoint.az](https://epoint.az) you can find on the website. 
 
 ## Requirements
+<<<<<<< HEAD
 - epoint-oc3_0.ocmod.zip is tested on v3.0.3.8
+=======
+- epoint-2_1.ocmod.zip is tested on v3.0.3.8
+>>>>>>> a08722f7e43233d3134947360fce518410f9ae54
 - epoint.ocmod.zip is tested on v4.0.1.1
 
 ## Installation Steps
